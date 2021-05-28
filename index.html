@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <style>
+    body {
+    align-content:center;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 500px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #100b14;
+      color: #c88694;
+    }
+
+    .flip-card-back {
+      background-color: #100b14;
+      color: #c88694;
+      transform: rotateY(180deg);
+    }
+
+    img {
+
+      height: 50px;
+      width: 50px;
+    }
+
+    span {
+      margin: 7px;
+    }
+
+    #h1 {
+      font-size: 1.5em;
+      font-weight: bolder;
+    }
+
+
+
+    .head {
+      font-family: 'Dancing Script',cursive;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+    @font-face {
+      font-family: TLF;
+      src: url(TheLightFont.ttf);
+    }
+
+    .tlf {
+      font-family: TLF;
+      display: inline-block;
+      font-size: medium;
+      margin: 0px 50px;
+      
+    }
+
+</style>
+  </head>
+
+  <body>
+<center>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+
+          <i class="fa fa-graduation-cap w3-xxxlarge" aria-hidden="true"></i>
+          <h1 class="head">Swasti Salecha</h1>
+<div class="sb"> 
+          <div class="tlf">Student at <br>Nirma University<br>
+            BBA-MBA 5 Year <br>Integrated Course<br>
+            Batch:2019-2024</div>
+          <div class="tlf">Passion:<br>
+            Sleep &#128564 ...
+            <br>
+            Yoga 🧘<br>
+            Cooking &#127859
+            <br>Music 🎵
+            <br>
+            Art &#x1f3a8</div>
+          </div>
+          <hr style=" height:20px; color: #5ea564; background-color: #5ea564; border-style: none;">
+        </div>
+        <div class="flip-card-back">
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4048901379083!2d72.50670351400669!3d23.008901322614893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9ad80489ee41%3A0x31a9fbc0abafd71e!2sIndraprastha%205%20Apartments!5e0!3m2!1sen!2sin!4v1622214263459!5m2!1sen!2sin" width="220" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="tlf">C-103 Indraprasth-5<br>
+        Nr. Surdhara Bungalows<br>Prahlad Nagar,Ahmedabad-380015
+      </div>
+      <hr style=" height:20px; color: #5ea564; background-color: #5ea564; border-style: none;">
+        </div>
+      </div>
+    </div>
+</center>
+  </body>
+
+</html>
